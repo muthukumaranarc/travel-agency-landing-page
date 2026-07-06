@@ -1,0 +1,129 @@
+.destinations-section {
+  padding: 100px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.destination-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border: 1px solid #f3f4f6;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.12);
+  border-color: rgba(37, 99, 235, 0.1);
+}
+
+.dest-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.dest-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+
+.destination-card:hover .dest-image img {
+  transform: scale(1.1);
+}
+
+.dest-price {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #2563eb;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.dest-rating {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fbbf24;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  backdrop-filter: blur(5px);
+}
+
+.dest-rating span {
+  margin-right: 2px;
+}
+
+.dest-info {
+  padding: 24px;
+}
+
+.dest-info h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px;
+}
+
+.dest-info p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.dest-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  transition: gap 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dest-btn:hover {
+  gap: 8px;
+}
+
+@media (max-width: 1024px) {
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .destinations-section {
+    padding: 60px 16px;
+  }
+}
