@@ -19,10 +19,10 @@
   transition: all 0.4s;
 }
 
-.testimonial-card:hover {
+/* .testimonial-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(37, 99, 235, 0.08);
-}
+} */
 
 .testimonial-stars {
   color: #f59e0b;

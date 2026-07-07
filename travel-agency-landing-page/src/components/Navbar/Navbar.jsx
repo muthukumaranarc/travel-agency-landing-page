@@ -17,7 +17,6 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
-          <span className="logo-icon">✈</span>
           <span className="logo-text">Wanderlust</span>
         </div>
         <div className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>

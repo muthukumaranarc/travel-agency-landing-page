@@ -15,16 +15,7 @@ export default function Hero() {
         </p>
         <div className="hero-search">
           <div className="search-input-group">
-            <span className="search-icon">📍</span>
             <input type="text" placeholder="Where do you want to go?" />
-          </div>
-          <div className="search-input-group">
-            <span className="search-icon">📅</span>
-            <input type="text" placeholder="Check in - Check out" />
-          </div>
-          <div className="search-input-group">
-            <span className="search-icon">👥</span>
-            <input type="text" placeholder="2 Guests" />
           </div>
           <button className="search-btn">Search</button>
         </div>

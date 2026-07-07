@@ -6,7 +6,6 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-section">
           <div className="nav-logo">
-            <span className="logo-icon">✈</span>
             <span className="logo-text">Wanderlust</span>
           </div>
           <p>Discover the world with Wanderlust Travels. We create unforgettable travel experiences tailored just for you.</p>
